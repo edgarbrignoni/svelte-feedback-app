@@ -7,7 +7,7 @@
     <div class="num-display">
         {item.rating}
     </div>
-    <div class="close">X</div>
+    <button class="close">X</button>
     <p class="text-display">
         {item.text}
     </p>
