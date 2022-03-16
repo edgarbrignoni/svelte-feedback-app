@@ -1,14 +1,13 @@
 <script>
     let firstName = "reactive";
     let lastName = "value";
-
-    firstName = "reassign";
+    let color = "blue";
 
     $: name = firstName + " " + lastName;
 </script>
 
 <main>
-    <h1>Hello {name}!</h1>
+    <h1 style="color: {color}">Hello {name}!</h1>
     <p>
         Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
         how to build Svelte apps.
