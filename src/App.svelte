@@ -4,6 +4,10 @@
     let color = "blue";
 
     $: name = firstName + " " + lastName;
+
+    const toggle = () => {
+        color = "purple";
+    };
 </script>
 
 <main>
@@ -12,7 +16,7 @@
         Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
         how to build Svelte apps.
     </p>
-    <button on:click={() => (color = "purple")}>Click</button>
+    <button on:click={toggle}>Click</button>
 </main>
 
 <style>
