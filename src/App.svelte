@@ -2,6 +2,8 @@
     let firstName = "reactive";
     let lastName = "value";
 
+    firstName = "reassign";
+
     $: name = firstName + " " + lastName;
 </script>
 
