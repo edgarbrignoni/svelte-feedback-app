@@ -23,6 +23,7 @@
     const toggle = () => {
         color = color === "blue" ? "red" : "blue";
         showText = !showText;
+        users = [...users, { id: 4, name: "Google" }];
     };
 </script>
 
