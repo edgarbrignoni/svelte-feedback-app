@@ -2,8 +2,8 @@
     import Card from "./Card.svelte";
     export let item;
 
-    const handleDelete = () => {
-        console.log(item.id);
+    const handleDelete = (itemId) => {
+        console.log(itemId);
     };
 </script>
 
