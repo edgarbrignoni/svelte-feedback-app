@@ -19,8 +19,10 @@
             Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to
             learn how to build Svelte apps.
         </p>
+    {:else}
+        <p>Click the button to change color back and re-display text.</p>
     {/if}
-    <button on:click={toggle}>Click</button>
+    <button on:click={toggle}>Change color</button>
 </main>
 
 <style>
