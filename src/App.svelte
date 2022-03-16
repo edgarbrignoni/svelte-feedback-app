@@ -1,5 +1,8 @@
 <script>
-    let name = "world";
+    let firstName = "reactive";
+    let lastName = "value";
+
+    $: name = firstName + " " + lastName;
 </script>
 
 <main>
