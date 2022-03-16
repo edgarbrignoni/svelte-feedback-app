@@ -6,7 +6,7 @@
     $: name = firstName + " " + lastName;
 
     const toggle = () => {
-        color = "purple";
+        color = color === "blue" ? "red" : "blue";
     };
 </script>
 
