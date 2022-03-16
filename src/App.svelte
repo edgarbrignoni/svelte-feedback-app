@@ -8,6 +8,7 @@
 
     const toggle = () => {
         color = color === "blue" ? "red" : "blue";
+        showText = !showText;
     };
 </script>
 
