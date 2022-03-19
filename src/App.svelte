@@ -26,7 +26,7 @@
 
     const addFeedback = (e) => {
         const newFeedback = e.detail;
-        feedback = [...feedback, newFeedback];
+        feedback = [newFeedback, ...feedback];
         console.log("feedback", feedback);
     };
 
