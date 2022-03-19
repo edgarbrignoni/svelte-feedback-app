@@ -18,6 +18,8 @@
         },
     ];
 
+    $: count = feedback.length;
+
     const deleteFeedback = (e) => {
         const itemId = e.detail;
         feedback = feedback.filter((item) => item.id != itemId);
@@ -25,5 +27,6 @@
 </script>
 
 <main class="container">
+    <h1>{count}</h1>
     <FeedbackList {feedback} on:delete-feedback={deleteFeedback} />
 </main>
