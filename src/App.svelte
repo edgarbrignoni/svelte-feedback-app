@@ -21,15 +21,6 @@
         },
     ];
 
-    $: count = feedback.length;
-    $: average =
-        feedback.length != 0
-            ? Math.round(
-                  feedback.reduce((a, { rating }) => a + rating, 0) /
-                      feedback.length
-              )
-            : 0;
-
     const addFeedback = (e) => {
         const newFeedback = e.detail;
         feedback = [newFeedback, ...feedback];
@@ -39,6 +30,6 @@
 
 <main class="container">
     <FeedbackForm on:add-feedback={addFeedback} />
-    <FeedbackStats {count} {average} />
+    <FeedbackStats />
     <FeedbackList />
 </main>
