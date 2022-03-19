@@ -36,6 +36,7 @@
                 return [newFeedback, ...currentFeedback];
             });
             text = "";
+            btnDisable = true;
         }
     };
 </script>
