@@ -22,7 +22,12 @@
 
     $: count = feedback.length;
     $: average =
-        feedback.reduce((a, { rating }) => a + rating, 0) / feedback.length;
+        feedback.length != 0
+            ? Math.round(
+                  feedback.reduce((a, { rating }) => a + rating, 0) /
+                      feedback.length
+              )
+            : 0;
 
     const addFeedback = (e) => {
         const newFeedback = e.detail;
