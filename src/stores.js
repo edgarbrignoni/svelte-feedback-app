@@ -1,6 +1,6 @@
 import { writable } from 'svelte/store';
 
-export const FeedbackStore = writable(
+export const FeedbackStore = writable([
     {
         id: 1,
         rating: 10,
@@ -16,4 +16,4 @@ export const FeedbackStore = writable(
         rating: 8,
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.'
     }
-);
+]);
