@@ -17,8 +17,12 @@
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.",
         },
     ];
+
+    const deleteFeedback = (e) => {
+        console.log(e.detail);
+    };
 </script>
 
 <main class="container">
-    <FeedbackList {feedback} />
+    <FeedbackList {feedback} on:delete-feedback={deleteFeedback} />
 </main>
