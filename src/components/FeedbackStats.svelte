@@ -5,9 +5,10 @@
     $: average =
         $FeedbackStore.length != 0
             ? Math.round(
-                  $FeedbackStore.reduce((a, { rating }) => a + rating, 0) /
-                      $FeedbackStore.length
-              )
+                  ($FeedbackStore.reduce((a, { rating }) => a + rating, 0) /
+                      $FeedbackStore.length) *
+                      10
+              ) / 10
             : 0;
 </script>
 
