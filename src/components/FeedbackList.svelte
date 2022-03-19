@@ -5,7 +5,7 @@
     import FeedbackItem from "./FeedbackItem.svelte";
     let feedback = [];
 
-    FeedbackStore.subscribe((data) => {
+    const unsubscibe = FeedbackStore.subscribe((data) => {
         console.log("data", data);
         feedback = data;
     });
@@ -13,6 +13,8 @@
     onMount(() => {
         console.log("mounted");
     });
+
+    onDestroy(() => {});
 </script>
 
 {#each feedback as fb (fb.id)}
