@@ -8,7 +8,7 @@
     let text = "";
     let rating = 10;
     let btnDisable = true;
-    let min = 10;
+    let min = 8;
     let message;
 
     const dispatch = createEventDispatcher();
@@ -18,8 +18,8 @@
     };
 
     const handleInput = () => {
-        if (text.trim().length < min - 1) {
-            message = `Text must be at least ${min} characters`;
+        if (text.trim().length <= min) {
+            message = `Text must be at least ${min + 2} characters`;
             btnDisable = true;
         } else {
             message = null;
@@ -28,7 +28,7 @@
     };
 
     const handleSubmit = () => {
-        if (text.trim().length > min) {
+        if (text.trim().length >= min) {
             const newFeedback = {
                 id: uuidv4(),
                 text,
