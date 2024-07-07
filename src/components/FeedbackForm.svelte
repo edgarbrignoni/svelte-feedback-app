@@ -42,7 +42,7 @@
 </script>
 
 <Card>
-    <header><h2>How would you rate your service with us???</h2></header>
+    <header><h2>How would you rate your service with us?</h2></header>
     <form on:submit|preventDefault={handleSubmit}>
         <RatingSelect on:rating-select={handleSelect} />
         <div class="input-group">
